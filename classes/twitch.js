@@ -20,7 +20,8 @@ TwitchClass.prototype.getGameDetails = (gameName) => {
 TwitchClass.prototype.getLiveStreamsForGame = (gameName, offset, limit) => {
     const query = {
         game: gameName,
-    }
+    };
+
     query.offset = offset || 0;
     query.limit = limit || 10;
 
@@ -34,12 +35,10 @@ TwitchClass.prototype.getLiveStreamsForGame = (gameName, offset, limit) => {
     });
 }
 
-TwitchClass.prototype.getStreamSummaryForGame = (gameName, offset, limit) => {
+TwitchClass.prototype.getStreamSummaryForGame = (gameName) => {
     const query = {
         game: gameName,
-    }
-    query.offset = offset || 0;
-    query.limit = limit || 10;
+    };
 
     return new Promise((resolve, reject) => {
         TwitchAPI.streams.summary(query, (error, response) => {
