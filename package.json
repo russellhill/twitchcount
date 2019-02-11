@@ -1,0 +1,16 @@
+{
+  "name": "twitchcount",
+  "version": "1.0.0",
+  "description": "Get basic details and counts for a game from twitch",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Russell Hill",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "twitch-api-v5": "^2.0.4"
+  }
+}
