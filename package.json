@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
+    "node-cache": "^4.2.0",
     "twitch-api-v5": "^2.0.4"
   }
 }
